@@ -28,4 +28,4 @@ async def encode(column: Column):
     new_x = new_X.tolist()
 
     # Return the prediction
-    return {"onehotencodeing": json.dumps(new_x)}
+    return {"onehotencodeing": json.dumps(new_x), 'initial_data': json.dumps(X.tolist())}
